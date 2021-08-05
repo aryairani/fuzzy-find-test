@@ -1,6 +1,8 @@
 # fuzzy-find-test
 
-The logic is in https://github.com/aryairani/fuzzy-find-test/blob/main/src/Lib.hs
+Here is a little program for testing the performance of the fuzzyfind haskell lib.
+
+The main logic is in https://github.com/aryairani/fuzzy-find-test/blob/main/src/Lib.hs
 
 ```haskell
 import Text.FuzzyFind
