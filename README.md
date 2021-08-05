@@ -24,12 +24,10 @@ The command-line I used is:
 ```bash
 stack exec -- time fuzzy-find-test-exe "M.tL" < shared.namespace.csv
 ```
-which produced the top match `contrib.bascott.continuations.v1._external.base.M1l.Map.toList` in 2.55 seconds, 
-
-as compared to 
+which produced the top match **`contrib.bascott.continuations.v1._external.base.M1l.Map.toList`** in 2.5–3 seconds, as compared to 
 ```bash
 time fzf -n 1 -d, -q M.tL < shared.namespace
 ```
-which returned the top match `base.Map.toList` in 0.02 seconds
+which returned the top match **`base.Map.toList`** in 0.01–0.02 seconds
 
 How can we improve it?
