@@ -18,7 +18,7 @@ someFunc = do
 
 The input I used is in https://gist.github.com/aryairani/34d4b6cf65a7cb6117880c65d642a587
 
-I compiled with -O2.
+I compiled with `-O2`.
 
 The command-line I used is: 
 ```bash
