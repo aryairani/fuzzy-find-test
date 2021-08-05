@@ -18,15 +18,18 @@ someFunc = do
     traverse_ (putStrLn . show) $ sort (fuzzyFind queryArgs stdinLines)
 ```
 
-The input I used is in https://gist.github.com/aryairani/34d4b6cf65a7cb6117880c65d642a587
-
 I compiled with `-O2`.
+
+The input I used is in https://gist.github.com/aryairani/34d4b6cf65a7cb6117880c65d642a587, which was created with https://github.com/unisonweb/unison/pull/2293 after pulling https://github.com/unisonweb/share into an empty unison codebase.
 
 The command-line I used is: 
 ```bash
 stack exec -- time fuzzy-find-test-exe "M.tL" < shared.namespace.csv
 ```
-which produced the top match **`contrib.bascott.continuations.v1._external.base.M1l.Map.toList`** in 2.5–3 seconds, as compared to 
+which produced the top match **`contrib.bascott.continuations.v1._external.base.M1l.Map.toList`** in 2.5–3 seconds, 
+
+vs
+
 ```bash
 time fzf -n 1 -d, -q M.tL < shared.namespace.csv
 ```
