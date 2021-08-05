@@ -20,7 +20,7 @@ someFunc = do
 
 I compiled with `-O2`.
 
-The input I used is in https://gist.github.com/aryairani/34d4b6cf65a7cb6117880c65d642a587, which was created with https://github.com/unisonweb/unison/pull/2293 after pulling https://github.com/unisonweb/share into an empty unison codebase.
+The `shared.namespace.csv` input I used is available at https://gist.github.com/aryairani/34d4b6cf65a7cb6117880c65d642a587. It was created with https://github.com/unisonweb/unison/pull/2293 after pulling https://github.com/unisonweb/share into an empty unison codebase.
 
 The command-line I used is: 
 ```bash
